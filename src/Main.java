@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -63,6 +64,20 @@ public class Main {
 
 
         //Arrays.
+        int[]arrInt1 = new int[5];
+        int[]arrInt2 = {0,1,2,3,4};
+        System.out.println("arrInt1: " + Arrays.toString(arrInt1));
+        System.out.println("arrInt2: " + Arrays.toString(arrInt2));
+        //Matriz
+        int[][]matriz1=new int [5][5];
+        int[][]matriz2={{0,1,2,3,4},
+                        {0,1,2,3,4}};
+        System.out.println("matriz1: " + Arrays.toString(matriz1));//No fufa.
+        System.out.println("matriz2: " + Arrays.toString(matriz2));//No fufa.
+
+
+
+
 
 
 
