@@ -25,7 +25,35 @@ public class Main {
 
         vi= vc +1;// Daria 66 ya que en la tabla Asci "A"=65;(Unicode)
         System.out.println("vi (entero): "+ vi + "vi (char): " +(char)vi);
-        System.exit(0);
+
+
+        //Operadores.
+        int a=1, b=2;
+        System.out.println("a: " +a + " b: " +b);
+        a++;//postincremento
+        ++b;//preincremento
+        System.out.println("a: " +a + " b: " +b);
+        int c = a++ * ++b;// el preincremento incrementa y luego toma el valor y el postincremento lo contrario.
+        System.out.println("a: " +a + " b: " +b + " c: " +c);
+
+        //Precedencia de operadores () ++ -- */% +- <>===!= ||&&!.
+        boolean bo = (2+8)< ++a || 2+5*9 == a++ + 43;// El || es un or.
+        //10< ++a || 2+5*9 == a++ + 43;
+        //10< 4 || 2+5*9 == 4 + 43; (a ahora valdria 5)
+        //10< 4 || 2+45 == 4 + 43;
+        //10< 4 || 47 == 47;
+        //false || true;
+        //True;
+        System.out.println("bo: " +bo);
+        bo = ++a < 10 || ++a ==6;
+        System.out.println("bo: " +bo + " a: " +a);//El or con un solo palo haria que a = 7.
+
+
+
+
+
+
+        System.exit(0);//Para no continuar con la lectura.
 
 
 
