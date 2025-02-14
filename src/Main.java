@@ -8,10 +8,10 @@ public class Main {
         int vi = 2;
         double vd = 2.3;
         char vc = 'A';
-        String cadena="hola";
+        String cad="hola";
         // Mostrando
         // Actua como operador de concatenacion.
-        System.out.println("vi:" +vi + "vd" +vd + "vc" +vc + "cadena" +cadena);
+        System.out.println("vi:" +vi + "vd" +vd + "vc" +vc + "cad" +cad);
 
 
         //Bool
@@ -47,6 +47,25 @@ public class Main {
         System.out.println("bo: " +bo);
         bo = ++a < 10 || ++a ==6;
         System.out.println("bo: " +bo + " a: " +a);//El or con un solo palo haria que a = 7.
+
+
+        cad="Hola";
+        //Sobrecarga de operadores: El operador se comporta de forma diferente.
+        //Según sus operadores.
+        a= 1 + 1;//+ es una suma algebraica.
+        cad= "1" +"1" + 2 + 3;//+ Es una concatenación incluir otro tipo se denomina wropping.
+        System.out.println("cad: " +cad);
+        String cad1= cad.substring(2,4);//coge desde el dos hasta el 4-1 es decir el 3 si en el cad de arriba ponemos un 4 no loo cogería hay q cambiar esto.
+        System.out.println("cad1: " +cad1);
+
+        bo=cad1.equals("23");
+        System.out.println("bo: " +bo);
+
+
+        //Arrays.
+
+
+
 
 
 
@@ -93,8 +112,8 @@ public class Main {
 
         // Sentencias switch-case.
         System.out.println("Introduzca un color(R/r, V/v, A/a)");
-        cadena= sc.next();
-        vc= cadena.charAt(0);//Es como un Array de caracteres en Clion.
+        cad= sc.next();
+        vc= cad.charAt(0);//Es como un Array de caracteres en Clion.
 
         switch(vc){
             case 'V':
