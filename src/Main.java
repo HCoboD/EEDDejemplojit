@@ -14,7 +14,7 @@ public class Main {
         System.out.println("vi:" +vi + "vd" +vd + "vc" +vc + "cadena" +cadena);
 
 
-        //Boolianos
+        //Bool
         boolean vb=false;
         vi=(int) 2.9 +1;//Con el int se hace una conversion, del numero a la derecha y no redondea.
         //Formas de arreglar si los dos son decimales.
